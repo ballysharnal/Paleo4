@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf798d40d4b35b4eb793ea45e7598bd, type: 3}
+  m_Name: basbrodeparures
+  m_EditorClassIdentifier: 
+  id: 4
+  displayName: basbrodeparures
+  description: "Reconstitution d'un bas en peau animale\xE0 partir traditions inuits"
+  itemTexture2DHover: {fileID: 2800000, guid: d161a5d7e6386ce4da9f99ad5ffe1f0a, type: 3}
+  itemTexture2DLink: {fileID: 2800000, guid: f6f4effe946e7644aa46851745eb79db, type: 3}
+  itemTexture2DSelect: {fileID: 2800000, guid: 64b8879ce96501d438df3b8e38f958de, type: 3}
+  percent: 100
+  typeVetement: 3
