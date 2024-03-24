@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DynamicPercent : MonoBehaviour
+public class DynamicBar : MonoBehaviour
 {
     public Slider veracityBar;
     public Text textPercent;

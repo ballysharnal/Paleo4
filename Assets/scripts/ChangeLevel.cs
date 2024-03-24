@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ChangeLevel : MonoBehaviour
 {
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     public string sceneToLoad;
     public void SwitchToEnd() {
         SceneManager.LoadSceneAsync(sceneToLoad);
