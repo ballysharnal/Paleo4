@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 1
   displayName: bonnetcoq
   description: "Reconstitution d'un bonnet du Pal\xE9o Sup"
-  itemTexture2DHover: {fileID: 0}
-  itemTexture2DLink: {fileID: 0}
-  itemTexture2DSelect: {fileID: 0}
+  itemTexture2DHover: {fileID: 2800000, guid: dc100995ea605c948a5a782425086f17, type: 3}
+  itemTexture2DLink: {fileID: 2800000, guid: ad9ff6879dbde1f4ca115a7cdd6266df, type: 3}
+  itemTexture2DSelect: {fileID: 2800000, guid: ab2979f92d77713448cf1a993487ca57, type: 3}
   percent: 100
   typeVetement: 0

@@ -37,17 +37,17 @@ public class DatasEnvironement : MonoBehaviour
                 if (valuesTile.Length > 5) {
                     item.displayName = valuesTile[2];
                     item.description = valuesTile[3];
-                    Debug.Log(Path.Combine(Application.dataPath, "Resources/Textures/icone_" + valuesTile[4].Split(".png")[0]) + "_hover.png");
+                    Debug.Log("Textures/icone_" + valuesTile[4].Split(".png")[0] + "_hover");
                     
-                    item.itemTexture2DHover = Resources.Load<Texture2D>(Path.Combine(Application.dataPath, "Resources/Textures/icone_" + valuesTile[4].Split(".png")[0]) + "_hover.png");
+                    item.itemTexture2DHover = Resources.Load<Texture2D>("Textures/icone_" + valuesTile[4].Split(".png")[0] + "_hover");
 
                     if (item.itemTexture2DHover != null) {
                         Debug.Log(item.itemTexture2DHover);
                     }
 
-                    item.itemTexture2DLink = Resources.Load<Texture2D>(Path.Combine(Application.dataPath, "Resources/Textures/icone_" + valuesTile[4].Split(".png")[0]) + "_link.png");
+                    item.itemTexture2DLink = Resources.Load<Texture2D>("Textures/icone_" + valuesTile[4].Split(".png")[0] + "_link");
 
-                    item.itemTexture2DSelect = Resources.Load<Texture2D>(Path.Combine(Application.dataPath,"Resources/Textures/icone_" + valuesTile[4].Split(".png")[0]) + "_select.png");
+                    item.itemTexture2DSelect = Resources.Load<Texture2D>("Textures/icone_" + valuesTile[4].Split(".png")[0] + "_select");
 
                     switch(valuesTile[6].ToLower()) {
                         case "bon":

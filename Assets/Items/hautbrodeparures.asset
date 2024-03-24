@@ -16,8 +16,8 @@ MonoBehaviour:
   displayName: hautbrodeparures
   description: "Reconstitution d'un haut en peau animale et brod\xE9 de parures pal\xE9o
     sup"
-  itemTexture2DHover: {fileID: 0}
-  itemTexture2DLink: {fileID: 0}
-  itemTexture2DSelect: {fileID: 0}
+  itemTexture2DHover: {fileID: 2800000, guid: e8441a11fcef05a47ac558d1e772ed76, type: 3}
+  itemTexture2DLink: {fileID: 2800000, guid: 83d63d63dbb3d1043886e838a34ac34c, type: 3}
+  itemTexture2DSelect: {fileID: 2800000, guid: 1490b8c4a921d974b9056f37afd10ee3, type: 3}
   percent: 100
   typeVetement: 2
