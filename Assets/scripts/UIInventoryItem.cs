@@ -66,12 +66,13 @@ namespace Inventory.UI
         }
 
 
-        public void ExternalClick()
+        public void ExternalOnPointerClick()
         {
             OnPointerClick(null);
         }
         public void OnPointerClick(PointerEventData pointerData)
         {
+            
             if (pointerData != null && pointerData.button == PointerEventData.InputButton.Right)
             {
                 OnRightMouseBtnClick?.Invoke(this);
@@ -82,9 +83,19 @@ namespace Inventory.UI
             }
         }
 
+        public void ExternalOnEndDrag()
+        {
+            OnEndDrag(null);
+        }
+
         public void OnEndDrag(PointerEventData eventData)
         {
             OnItemEndDrag?.Invoke(this);
+        }
+
+        public void ExternalOnBeginDrag()
+        {
+            OnBeginDrag(null);
         }
 
         public void OnBeginDrag(PointerEventData eventData)
@@ -94,9 +105,19 @@ namespace Inventory.UI
             OnItemBeginDrag?.Invoke(this);
         }
 
+        public void ExternalOnDrop()
+        {
+            OnDrop(null);
+        }
+
         public void OnDrop(PointerEventData eventData)
         {
             OnItemDroppedOn?.Invoke(this);
+        }
+
+        public void ExternalOnDrag()
+        {
+            OnDrag(null);
         }
 
         public void OnDrag(PointerEventData eventData)
