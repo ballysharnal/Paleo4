@@ -18,12 +18,23 @@ public class UIInventoryPage : MonoBehaviour
     [SerializeField]
     private UIInventoryImage itemDescription;
 
-    List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
+    [HideInInspector]
+    public List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
+
+    public static UIInventoryPage instance;
+
 
     private void Awake()
     {
         //Hide();
-
+        
+        //permet de garder une seule instance commune pour tous les niveaux et de ne pas en créer pour chaque
+        if (instance != null)
+        {
+            return;
+        }
+        instance = this;
+        
         if (itemDescription != null )
         {
         itemDescription.ResetDescription();
@@ -35,7 +46,7 @@ public class UIInventoryPage : MonoBehaviour
         for (int i = 0; i < inventorysize; i++)
         {
             UIInventoryItem uiItem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
-            uiItem.transform.SetParent(contentPanel);
+            uiItem.transform.SetParent(contentPanel);//pour le spawn
             listOfUIItems.Add(uiItem);
             uiItem.OnItemClicked += HandleItemSelection;
             uiItem.OnItemBeginDrag += HandleBeginDrag;
@@ -43,6 +54,7 @@ public class UIInventoryPage : MonoBehaviour
             uiItem.OnItemEndDrag += HandleEndDrag;
             uiItem.OnRightMouseBtnClick += HandleShowItemActions;
             uiItem.GetComponent<Image>().enabled = false;
+            
         }
     }
 

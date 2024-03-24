@@ -323,6 +323,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 0}
   contentPanel: {fileID: 0}
   itemDescription: {fileID: 0}
+  listOfUIItems: []
 --- !u!1 &589387204
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +728,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 137203100}
   inventorySize: 8
+  numberOfDistrib: 2
+  listOfItem: []
+  listItemSlotIsFull: []
 --- !u!114 &809177742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,13 +1085,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 809177735}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 809177741}
+        m_TargetAssemblyTypeName: InventoryController, Assembly-CSharp
+        m_MethodName: GetRandomItems
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
