@@ -30,4 +30,9 @@ public class InventoryController : MonoBehaviour
         }
         
     }
+
+    public void GetRandomItems()
+    {
+
+    }
 }
